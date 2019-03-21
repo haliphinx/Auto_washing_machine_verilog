@@ -1,0 +1,5 @@
+set -tmpdir "F:/wash_text/xst/projnav.tmp"
+set -xsthdpdir "F:/wash_text/xst"
+elaborate
+-ifn wash_mod.prj
+-ifmt mixed

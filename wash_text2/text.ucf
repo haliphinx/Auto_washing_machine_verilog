@@ -1,0 +1,33 @@
+
+#Created by Constraints Editor (xc3s100e-cp132-4) - 2015/09/16
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50 %;
+
+# PlanAhead Generated physical constraints 
+
+NET "ss" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "power" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "A[3]" LOC = K14;
+NET "A[2]" LOC = M13;
+NET "A[1]" LOC = J12;
+NET "A[0]" LOC = F12;
+NET "C[0]" LOC = M12;
+NET "C[1]" LOC = L13;
+NET "C[2]" LOC = P12;
+NET "C[3]" LOC = N11;
+NET "C[4]" LOC = N14;
+NET "C[5]" LOC = H12;
+NET "C[6]" LOC = L14;
+NET "clk" LOC = B8;
+NET "ld" LOC = N4;
+NET "p" LOC = M5;
+NET "s" LOC = M11;
+NET "li" LOC = N5;
+NET "lo" LOC = P6;
+NET "lr" LOC = P4;
+NET "lw" LOC = G1;
+NET "mod" LOC = M4;
+NET "power" LOC = G12;
+NET "ss" LOC = C11;
+NET "vb4" LOC = P7;
+NET "water" LOC = A7;

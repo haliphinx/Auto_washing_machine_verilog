@@ -1,0 +1,2 @@
+vhdtdtfi -lib work F:/wash_text/wash_mod.v -lang verilog -prj wash_text -o wash_mod.spl -module wash_mod -template M:/ise/14.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e wash_mod.spl F:/wash_text/wash_mod.sym 

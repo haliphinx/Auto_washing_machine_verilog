@@ -1,0 +1,257 @@
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim text.ngc text_synthesis.v 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim text.ngc text_synthesis.v 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "F:/wash_text/text.xst" -ofn "F:/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 text.ngc text.ngd  
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/wash_text1/text.xst" -ofn "C:/Users/Administrator/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text1/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text1/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 
+xst -intstyle ise -ifn "C:/Users/xiao/Desktop/wash_text2/text.xst" -ofn "C:/Users/xiao/Desktop/wash_text2/text.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc text.ucf -p xc3s100e-cp132-4 text.ngc text.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o text_map.ncd text.ngd text.pcf 
+par -w -intstyle ise -ol high -t 1 text_map.ncd text.ncd text.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text.twx text.ncd -o text.twr text.pcf -ucf text.ucf 
+bitgen -intstyle ise -f text.ut text.ncd 

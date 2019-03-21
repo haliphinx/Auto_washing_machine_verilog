@@ -1,0 +1,51 @@
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design text.ngc ...
+WARNING:NetListWriters:298 - No output is written to text.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_t_cmp_ge0000_lut<8 : 1> on block
+   text is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Mcompar_tss_cmp_ge0000_lut<8 : 1> on
+   block text is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_Tt_addsub0000_cy<3 : 1> on block
+   text is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file text.edif ...
+ngc2edif: Total memory usage is 83180 kilobytes
+
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design text.ngc ...
+WARNING:NetListWriters:298 - No output is written to text.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_t_cmp_ge0000_lut<8 : 1> on block
+   text is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Mcompar_tss_cmp_ge0000_lut<8 : 1> on
+   block text is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_Tt_addsub0000_cy<3 : 1> on block
+   text is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file text.edif ...
+ngc2edif: Total memory usage is 83436 kilobytes
+
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design text.ngc ...
+WARNING:NetListWriters:298 - No output is written to text.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_t_cmp_ge0000_lut<8 : 1> on block
+   text is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Mcompar_tss_cmp_ge0000_lut<8 : 1> on
+   block text is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_Tt_addsub0000_cy<3 : 1> on block
+   text is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file text.edif ...
+ngc2edif: Total memory usage is 83436 kilobytes
+

@@ -1,0 +1,55 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Fri Sep 18 15:46:09 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ss" LOCATE = SITE "C11" LEVEL 1;
+PIN ss_pin<0> = BEL "ss" PINNAME PAD;
+PIN "ss_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "vb4" LOCATE = SITE "P7" LEVEL 1;
+COMP "mod" LOCATE = SITE "M4" LEVEL 1;
+COMP "A<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "A<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "A<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "C<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "C<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "C<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "C<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "C<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "C<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "C<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "p" LOCATE = SITE "M5" LEVEL 1;
+COMP "s" LOCATE = SITE "M11" LEVEL 1;
+COMP "water" LOCATE = SITE "A7" LEVEL 1;
+COMP "power" LOCATE = SITE "G12" LEVEL 1;
+PIN power_pin<0> = BEL "power" PINNAME PAD;
+PIN "power_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "ld" LOCATE = SITE "N4" LEVEL 1;
+COMP "li" LOCATE = SITE "N5" LEVEL 1;
+COMP "lo" LOCATE = SITE "P6" LEVEL 1;
+COMP "lr" LOCATE = SITE "P4" LEVEL 1;
+COMP "lw" LOCATE = SITE "G1" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "Tt_h_0" BEL "Tt_h_1" BEL "ts" BEL "vb1" BEL "Tt_l_0" BEL
+        "Tt_l_1" BEL "Tt_l_2" BEL "Tt_l_3" BEL "A_0" BEL "A_1" BEL "A_2" BEL
+        "A_3" BEL "C_0" BEL "C_1" BEL "C_2" BEL "C_3" BEL "C_4" BEL "C_5" BEL
+        "C_6" BEL "Tm_l_0" BEL "Tm_l_1" BEL "Tm_l_2" BEL "Tm_l_3" BEL "t1_0"
+        BEL "t1_1" BEL "t1_2" BEL "t1_3" BEL "t1_4" BEL "t1_5" BEL "t1_6" BEL
+        "t1_7" BEL "t1_8" BEL "t1_9" BEL "t1_10" BEL "t1_11" BEL "t1_12" BEL
+        "t1_13" BEL "t1_14" BEL "t1_15" BEL "t1_16" BEL "t1_17" BEL "t1_18"
+        BEL "t1_19" BEL "t1_20" BEL "t1_21" BEL "t1_22" BEL "t1_23" BEL
+        "t1_24" BEL "t_0" BEL "t_1" BEL "t_2" BEL "t_3" BEL "t_4" BEL "t_5"
+        BEL "t_6" BEL "t_7" BEL "t_8" BEL "t_9" BEL "t_10" BEL "t_11" BEL
+        "t_12" BEL "t_13" BEL "t_14" BEL "t_15" BEL "t_16" BEL "t_17" BEL
+        "t_18" BEL "t_19" BEL "t_20" BEL "t_21" BEL "t_22" BEL "t_23" BEL
+        "t_24" BEL "t2_0" BEL "t2_1" BEL "t2_2" BEL "t2_3" BEL "t2_4" BEL
+        "t2_5" BEL "t2_6" BEL "t2_7" BEL "t2_8" BEL "t2_9" BEL "t2_10" BEL
+        "t2_11" BEL "t2_12" BEL "t2_13" BEL "t2_14" BEL "t2_15" BEL "t2_16"
+        BEL "t2_17" BEL "t2_18" BEL "t2_19" BEL "t2_20" BEL "t2_21" BEL
+        "t2_22" BEL "t2_23" BEL "t2_24" BEL "tss_0" BEL "tss_1" BEL "tss_2"
+        BEL "Tm_h" BEL "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

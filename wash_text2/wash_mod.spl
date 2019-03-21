@@ -1,0 +1,23 @@
+[Inputs]
+mod
+ts
+s
+p
+power
+ss
+water
+=Tt1[5:0]=
+=mod1[2:0]=
+[Outputs]
+li
+lo
+lw
+lr
+ld
+tp
+=Tt[5:0]=
+=Tm[4:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel wash_mod
+

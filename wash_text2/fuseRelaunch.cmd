@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/xiao/Desktop/wash_text2/t1_isim_beh.exe" -prj "C:/Users/xiao/Desktop/wash_text2/t1_beh.prj" "work.t1" "work.glbl" 

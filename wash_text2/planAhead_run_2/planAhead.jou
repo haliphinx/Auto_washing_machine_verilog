@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Wed Sep 16 08:58:28 2015
+# Process ID: 2424
+# Log file: C:/Users/Administrator/Desktop/wash_text1/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Administrator/Desktop/wash_text1/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Administrator/Desktop/wash_text1/pa.fromNetlist.tcl
+startgroup
+set_property package_pin K14 [get_ports {A[0]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {A[1]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {A[2]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {A[3]}]
+endgroup
+startgroup
+set_property package_pin M12 [get_ports {C[0]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {C[1]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {C[2]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {C[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {C[4]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {C[5]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {C[6]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports ld]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports li]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports lo]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports lr]
+endgroup
+startgroup
+set_property package_pin G1 [get_ports lw]
+endgroup
+startgroup
+set_property package_pin M4 [get_ports mod]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports power]
+endgroup
+startgroup
+set_property package_pin C11 [get_ports ss]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports vb]
+endgroup
+startgroup
+set_property package_pin A7 [get_ports water]
+endgroup
+save_design

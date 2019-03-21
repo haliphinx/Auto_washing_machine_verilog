@@ -1,0 +1,853 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: text.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "text.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "text"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : text
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "text.v" in library work
+Module <text> compiled
+No errors in compilation
+Analysis of file <"text.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <text> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <text>.
+Module <text> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <text>.
+    Related source file is "text.v".
+INFO:Xst:1799 - State 00010 is never reached in FSM <lev_h>.
+INFO:Xst:1799 - State 00011 is never reached in FSM <lev_h>.
+INFO:Xst:1799 - State 00100 is never reached in FSM <lev_h>.
+INFO:Xst:1799 - State 00101 is never reached in FSM <lev_h>.
+INFO:Xst:1799 - State 00110 is never reached in FSM <lev_h>.
+INFO:Xst:1799 - State 00111 is never reached in FSM <lev_h>.
+INFO:Xst:1799 - State 01000 is never reached in FSM <lev_h>.
+INFO:Xst:1799 - State 01001 is never reached in FSM <lev_h>.
+    Found finite state machine <FSM_0> for signal <lev_h>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | water                     (rising_edge)        |
+    | Clock enable       | lev_h$not0000             (positive)           |
+    | Reset              | p                         (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Power Up State     | 00000                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <mod1>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 6                                              |
+    | Clock              | mod                       (falling_edge)       |
+    | Reset              | p                         (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x7-bit ROM for signal <C$mux0001>.
+    Found 4-bit register for signal <A>.
+    Found 7-bit register for signal <C>.
+    Found 5-bit register for signal <Tm>.
+    Found 6-bit register for signal <Tt>.
+    Found 1-bit register for signal <ld>.
+    Found 1-bit register for signal <li>.
+    Found 1-bit register for signal <lo>.
+    Found 1-bit register for signal <lr>.
+    Found 1-bit register for signal <lw>.
+    Found 1-bit register for signal <p>.
+    Found 1-bit register for signal <s>.
+    Found 4-bit comparator lessequal for signal <C$cmp_le0000> created at line 542.
+    Found 5-bit register for signal <lev_l>.
+    Found 5-bit adder for signal <lev_l$addsub0000> created at line 464.
+    Found 6-bit comparator greater for signal <lw$cmp_gt0000> created at line 308.
+    Found 4-bit register for signal <m>.
+    Found 4-bit adder for signal <m$add0000> created at line 443.
+    Found 6-bit comparator greater for signal <old_ld_8$cmp_gt0000> created at line 277.
+    Found 6-bit comparator greater for signal <old_lr_6$cmp_gt0000> created at line 253.
+    Found 6-bit comparator greater for signal <old_lr_9$cmp_gt0000> created at line 322.
+    Found 4-bit comparator greater for signal <old_m_12$cmp_gt0000> created at line 440.
+    Found 5-bit comparator greater for signal <old_Tm_h_4$cmp_gt0000> created at line 195.
+    Found 3-bit adder for signal <old_tss_1$add0000> created at line 117.
+    Found 6-bit comparator greater for signal <old_Tt_h_3$cmp_gt0000> created at line 181.
+    Found 6-bit comparator greater for signal <old_Tt_h_3$cmp_gt0001> created at line 184.
+    Found 6-bit comparator greater for signal <old_Tt_h_3$cmp_gt0002> created at line 187.
+    Found 6-bit comparator greater for signal <old_vb3_7$cmp_gt0000> created at line 259.
+    Found 6-bit comparator lessequal for signal <old_vb3_7$cmp_le0000> created at line 259.
+    Found 25-bit up counter for signal <t>.
+    Found 25-bit comparator greatequal for signal <t$cmp_ge0000> created at line 104.
+    Found 25-bit up counter for signal <t1>.
+    Found 25-bit up counter for signal <t2>.
+    Found 5-bit subtractor for signal <Tm$addsub0000> created at line 424.
+    Found 4-bit register for signal <Tm1>.
+    Found 1-bit register for signal <Tm_h>.
+    Found 4-bit register for signal <Tm_l>.
+    Found 4-bit subtractor for signal <Tm_l$sub0000> created at line 201.
+    Found 4-bit up counter for signal <tp>.
+    Found 1-bit register for signal <tpp>.
+    Found 4-bit comparator less for signal <tpp$cmp_lt0000> created at line 236.
+    Found 1-bit register for signal <ts>.
+    Found 3-bit up counter for signal <tss>.
+    Found 25-bit comparator greatequal for signal <tss$cmp_ge0000> created at line 115.
+    Found 3-bit comparator greater for signal <tss$cmp_gt0000> created at line 118.
+    Found 6-bit subtractor for signal <Tt$addsub0000> created at line 423.
+    Found 6-bit register for signal <Tt1>.
+    Found 2-bit register for signal <Tt_h>.
+    Found 4-bit register for signal <Tt_l>.
+    Found 2x4-bit multiplier for signal <Tt_l$mult0000> created at line 193.
+    Found 4-bit subtractor for signal <Tt_l$sub0000> created at line 193.
+    Found 1-bit register for signal <vb>.
+    Found 1-bit register for signal <vb1>.
+    Found 25-bit comparator greatequal for signal <vb1$cmp_ge0000> created at line 129.
+    Found 4-bit register for signal <vb2>.
+    Found 4-bit subtractor for signal <vb2$sub0000> created at line 146.
+    Found 1-bit register for signal <vb3>.
+    Found 4-bit comparator greater for signal <vb3$cmp_gt0000> created at line 230.
+    Found 6-bit comparator greater for signal <vb3$cmp_gt0001> created at line 282.
+    Found 6-bit comparator greater for signal <vb3$cmp_gt0002> created at line 327.
+    Found 6-bit comparator lessequal for signal <vb3$cmp_le0000> created at line 282.
+    Found 6-bit comparator lessequal for signal <vb3$cmp_le0001> created at line 327.
+    Found 6-bit comparator lessequal for signal <vb3$cmp_le0002> created at line 377.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   5 Counter(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred  23 Comparator(s).
+Unit <text> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 2x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 9
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 1
+# Counters                                             : 5
+ 25-bit up counter                                     : 3
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 25
+ 1-bit register                                        : 13
+ 2-bit register                                        : 1
+ 4-bit register                                        : 6
+ 5-bit register                                        : 2
+ 6-bit register                                        : 2
+ 7-bit register                                        : 1
+# Comparators                                          : 23
+ 25-bit comparator greatequal                          : 3
+ 3-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 2
+ 4-bit comparator less                                 : 1
+ 4-bit comparator lessequal                            : 1
+ 5-bit comparator greater                              : 1
+ 6-bit comparator greater                              : 10
+ 6-bit comparator lessequal                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <mod1/FSM> on signal <mod1[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <lev_h/FSM> on signal <lev_h[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 0
+ 00001 | 1
+ 00010 | unreached
+ 00011 | unreached
+ 00100 | unreached
+ 00101 | unreached
+ 00110 | unreached
+ 00111 | unreached
+ 01000 | unreached
+ 01001 | unreached
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 2x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 9
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 1
+# Counters                                             : 5
+ 25-bit up counter                                     : 3
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+# Comparators                                          : 23
+ 25-bit comparator greatequal                          : 3
+ 3-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 2
+ 4-bit comparator less                                 : 1
+ 4-bit comparator lessequal                            : 1
+ 5-bit comparator greater                              : 1
+ 6-bit comparator greater                              : 10
+ 6-bit comparator lessequal                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <text> ...
+WARNING:Xst:1293 - FF/Latch <Tm1_2> has a constant value of 1 in block <text>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tm1_2> has a constant value of 1 in block <text>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block text, actual ratio is 26.
+FlipFlop Tt_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 154
+ Flip-Flops                                            : 154
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : text.ngr
+Top Level Output File Name         : text
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 35
+
+Cell Usage :
+# BELS                             : 619
+#      GND                         : 1
+#      INV                         : 16
+#      LUT1                        : 81
+#      LUT2                        : 25
+#      LUT2_D                      : 7
+#      LUT2_L                      : 7
+#      LUT3                        : 67
+#      LUT3_D                      : 5
+#      LUT3_L                      : 6
+#      LUT4                        : 172
+#      LUT4_D                      : 11
+#      LUT4_L                      : 22
+#      MUXCY                       : 101
+#      MUXF5                       : 22
+#      VCC                         : 1
+#      XORCY                       : 75
+# FlipFlops/Latches                : 154
+#      FD                          : 10
+#      FDC                         : 2
+#      FDC_1                       : 9
+#      FDCE                        : 14
+#      FDCPE                       : 12
+#      FDE                         : 14
+#      FDP_1                       : 3
+#      FDPE                        : 2
+#      FDR                         : 78
+#      FDRE                        : 3
+#      FDRS                        : 2
+#      FDS                         : 5
+# Clock Buffers                    : 6
+#      BUFG                        : 5
+#      BUFGP                       : 1
+# IO Buffers                       : 34
+#      IBUF                        : 4
+#      OBUF                        : 30
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      221  out of    960    23%  
+ Number of Slice Flip Flops:            154  out of   1920     8%  
+ Number of 4 input LUTs:                419  out of   1920    21%  
+ Number of IOs:                          35
+ Number of bonded IOBs:                  35  out of     83    42%  
+ Number of GCLKs:                         6  out of     24    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 102   |
+vb1                                | NONE(vb2_1)            | 5     |
+ts1                                | BUFG                   | 27    |
+power                              | IBUF+BUFG              | 1     |
+ss                                 | IBUF+BUFG              | 1     |
+water                              | IBUF+BUFG              | 6     |
+mod                                | IBUF+BUFG              | 12    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Tm1_Acst_inv(Tm1_Acst_inv1_INV_0:O)| NONE(Tm1_0)            | 19    |
+Tm_2__and0001(Tt_and00001:O)       | NONE(Tm_2)             | 8     |
+m_and0000(m_and00001:O)            | NONE(m_0)              | 4     |
+N0(XST_GND:G)                      | NONE(Tm_2)             | 2     |
+Tt_3__and0000(Tt_3__and00001:O)    | NONE(Tt_3)             | 2     |
+Tt_3__and0001(Tt_3__and00011:O)    | NONE(Tt_3)             | 2     |
+Tm_0__and0000(Tm_0__and00001:O)    | NONE(Tm_0)             | 1     |
+Tm_0__and0001(Tm_0__and00011:O)    | NONE(Tm_0)             | 1     |
+Tm_1__and0000(Tm_1__and00001:O)    | NONE(Tm_1)             | 1     |
+Tm_1__and0001(Tm_1__and00011:O)    | NONE(Tm_1)             | 1     |
+Tm_3__and0000(Tm_3__and00001:O)    | NONE(Tm_3)             | 1     |
+Tm_3__and0001(Tm_3__and00011:O)    | NONE(Tm_3)             | 1     |
+Tt_0__and0000(Tt_0__and00001:O)    | NONE(Tt_0)             | 1     |
+Tt_0__and0001(Tt_0__and00011:O)    | NONE(Tt_0)             | 1     |
+Tt_1__and0000(Tt_1__and00001:O)    | NONE(Tt_1)             | 1     |
+Tt_1__and0001(Tt_1__and00011:O)    | NONE(Tt_1)             | 1     |
+Tt_2__and0000(Tt_2__and00001:O)    | NONE(Tt_2)             | 1     |
+Tt_2__and0001(Tt_2__and00011:O)    | NONE(Tt_2)             | 1     |
+Tt_4__and0000(Tt_4__and00001:O)    | NONE(Tt_4)             | 1     |
+Tt_4__and0001(Tt_4__and00011:O)    | NONE(Tt_4)             | 1     |
+Tt_5__and0000(Tt_5__and00001:O)    | NONE(Tt_5)             | 1     |
+Tt_5__and0001(Tt_5__and00011:O)    | NONE(Tt_5)             | 1     |
+tpp(tpp:Q)                         | NONE(p)                | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.537ns (Maximum Frequency: 104.850MHz)
+   Minimum input arrival time before clock: 6.565ns
+   Maximum output required time after clock: 5.774ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.766ns (frequency: 147.792MHz)
+  Total number of paths / destination ports: 2850 / 174
+-------------------------------------------------------------------------
+Delay:               6.766ns (Levels of Logic = 12)
+  Source:            t1_3 (FF)
+  Destination:       tss_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: t1_3 to tss_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  t1_3 (t1_3)
+     LUT1:I0->O            1   0.704   0.000  Mcompar_tss_cmp_ge0000_cy<0>_rt (Mcompar_tss_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_tss_cmp_ge0000_cy<0> (Mcompar_tss_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_tss_cmp_ge0000_cy<1> (Mcompar_tss_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_tss_cmp_ge0000_cy<2> (Mcompar_tss_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_tss_cmp_ge0000_cy<3> (Mcompar_tss_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_tss_cmp_ge0000_cy<4> (Mcompar_tss_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_tss_cmp_ge0000_cy<5> (Mcompar_tss_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_tss_cmp_ge0000_cy<6> (Mcompar_tss_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_tss_cmp_ge0000_cy<7> (Mcompar_tss_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_tss_cmp_ge0000_cy<8> (Mcompar_tss_cmp_ge0000_cy<8>)
+     MUXCY:CI->O          29   0.331   1.436  Mcompar_tss_cmp_ge0000_cy<9> (tss_cmp_ge0000)
+     LUT4:I0->O            3   0.704   0.531  tss_and000011 (tss_and0000)
+     FDRE:R                    0.911          tss_0
+    ----------------------------------------
+    Total                      6.766ns (4.177ns logic, 2.589ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'vb1'
+  Clock period: 3.922ns (frequency: 254.972MHz)
+  Total number of paths / destination ports: 31 / 10
+-------------------------------------------------------------------------
+Delay:               3.922ns (Levels of Logic = 2)
+  Source:            vb2_1 (FF)
+  Destination:       vb2_1 (FF)
+  Source Clock:      vb1 rising
+  Destination Clock: vb1 rising
+
+  Data Path: vb2_1 to vb2_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.762  vb2_1 (vb2_1)
+     LUT4:I0->O            1   0.704   0.000  vb2_and00001 (vb2_and0000)
+     MUXF5:I0->O           5   0.321   0.633  vb2_and0000_f5 (vb2_not0000_inv)
+     FDR:R                     0.911          vb2_1
+    ----------------------------------------
+    Total                      3.922ns (2.527ns logic, 1.395ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ts1'
+  Clock period: 9.537ns (frequency: 104.850MHz)
+  Total number of paths / destination ports: 1439 / 49
+-------------------------------------------------------------------------
+Delay:               9.537ns (Levels of Logic = 7)
+  Source:            Tt_4 (FF)
+  Destination:       Tm_3 (FF)
+  Source Clock:      ts1 rising
+  Destination Clock: ts1 rising
+
+  Data Path: Tt_4 to Tm_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q           39   0.591   1.439  Tt_4 (Tt_4)
+     LUT4:I0->O            1   0.704   0.424  _old_Tm_11<2>3_SW0 (N59)
+     LUT4:I3->O            3   0.704   0.566  _old_Tm_11<2>3 (N21)
+     LUT4:I2->O            4   0.704   0.591  _old_Tm_11<0>11 (N89)
+     LUT4_D:I3->LO         1   0.704   0.104  _old_Tm_11<2>2210 (N204)
+     LUT4:I3->O            2   0.704   0.482  _old_Tm_11<2>34 (_old_Tm_11<2>)
+     LUT4_L:I2->LO         1   0.704   0.104  Tm_mux0000<3>_SW0 (N64)
+     LUT4:I3->O            1   0.704   0.000  Tm_mux0000<3> (Tm_mux0000<3>)
+     FDCPE:D                   0.308          Tm_3
+    ----------------------------------------
+    Total                      9.537ns (5.827ns logic, 3.710ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'power'
+  Clock period: 4.118ns (frequency: 242.846MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.118ns (Levels of Logic = 1)
+  Source:            p (FF)
+  Destination:       p (FF)
+  Source Clock:      power rising
+  Destination Clock: power rising
+
+  Data Path: p to p
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             34   0.591   1.263  p (p_OBUF)
+     INV:I->O             24   0.704   1.252  Tm1_Acst_inv1_INV_0 (Tm1_Acst_inv)
+     FDC:D                     0.308          p
+    ----------------------------------------
+    Total                      4.118ns (1.603ns logic, 2.515ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ss'
+  Clock period: 3.539ns (frequency: 282.545MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.539ns (Levels of Logic = 1)
+  Source:            s (FF)
+  Destination:       s (FF)
+  Source Clock:      ss rising
+  Destination Clock: ss rising
+
+  Data Path: s to s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             48   0.591   1.267  s (s_OBUF)
+     INV:I->O              6   0.704   0.669  lev_l_ClkEn_inv1_INV_0 (lev_l_ClkEn_inv)
+     FDC:D                     0.308          s
+    ----------------------------------------
+    Total                      3.539ns (1.603ns logic, 1.936ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'water'
+  Clock period: 6.330ns (frequency: 157.978MHz)
+  Total number of paths / destination ports: 52 / 7
+-------------------------------------------------------------------------
+Delay:               6.330ns (Levels of Logic = 4)
+  Source:            lev_l_1 (FF)
+  Destination:       lev_l_4 (FF)
+  Source Clock:      water rising
+  Destination Clock: water rising
+
+  Data Path: lev_l_1 to lev_l_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            11   0.591   1.108  lev_l_1 (lev_l_1)
+     LUT2_L:I0->LO         1   0.704   0.104  lev_h_cmp_eq0000_SW0 (N14)
+     LUT4:I3->O            5   0.704   0.808  lev_h_cmp_eq0000 (lev_h_cmp_eq0000)
+     LUT2_D:I0->O          1   0.704   0.595  lev_h_not000111 (N67)
+     LUT4:I0->O            1   0.704   0.000  lev_l_mux0000<0>1 (lev_l_mux0000<0>)
+     FDCE:D                    0.308          lev_l_4
+    ----------------------------------------
+    Total                      6.330ns (3.715ns logic, 2.615ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mod'
+  Clock period: 5.831ns (frequency: 171.483MHz)
+  Total number of paths / destination ports: 57 / 12
+-------------------------------------------------------------------------
+Delay:               5.831ns (Levels of Logic = 3)
+  Source:            mod1_FSM_FFd2 (FF)
+  Destination:       Tm1_1 (FF)
+  Source Clock:      mod falling
+  Destination Clock: mod falling
+
+  Data Path: mod1_FSM_FFd2 to Tm1_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           36   0.591   1.438  mod1_FSM_FFd2 (mod1_FSM_FFd2)
+     LUT3:I0->O            7   0.704   0.883  mod1_FSM_Out01 (lr_mux000085)
+     LUT4:I0->O            1   0.704   0.499  Tm1_mux0000<2>19 (Tm1_mux0000<2>19)
+     LUT2:I1->O            1   0.704   0.000  Tm1_mux0000<2>20 (Tm1_mux0000<2>)
+     FDC_1:D                   0.308          Tm1_1
+    ----------------------------------------
+    Total                      5.831ns (3.011ns logic, 2.820ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'vb1'
+  Total number of paths / destination ports: 36 / 9
+-------------------------------------------------------------------------
+Offset:              6.565ns (Levels of Logic = 4)
+  Source:            mod (PAD)
+  Destination:       vb2_1 (FF)
+  Destination Clock: vb1 rising
+
+  Data Path: mod to vb2_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.218   1.437  mod_IBUF (mod_IBUF1)
+     LUT4:I0->O            5   0.704   0.637  old_vb2_2_or00001 (old_vb2_2_or0000)
+     LUT4:I3->O            1   0.704   0.000  vb2_and00001 (vb2_and0000)
+     MUXF5:I0->O           5   0.321   0.633  vb2_and0000_f5 (vb2_not0000_inv)
+     FDR:R                     0.911          vb2_1
+    ----------------------------------------
+    Total                      6.565ns (3.858ns logic, 2.707ns route)
+                                       (58.8% logic, 41.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ts1'
+  Total number of paths / destination ports: 40 / 39
+-------------------------------------------------------------------------
+Offset:              5.580ns (Levels of Logic = 3)
+  Source:            mod (PAD)
+  Destination:       Tt_0 (FF)
+  Destination Clock: ts1 rising
+
+  Data Path: mod to Tt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.218   1.437  mod_IBUF (mod_IBUF1)
+     LUT2:I0->O           16   0.704   1.209  Tt_and00001 (Tm_2__and0001)
+     LUT4:I0->O            1   0.704   0.000  Tt_mux0000<2> (Tt_mux0000<2>)
+     FDCPE:D                   0.308          Tt_2
+    ----------------------------------------
+    Total                      5.580ns (2.934ns logic, 2.646ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'vb1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.609ns (Levels of Logic = 2)
+  Source:            vb (FF)
+  Destination:       vb4 (PAD)
+  Source Clock:      vb1 rising
+
+  Data Path: vb to vb4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  vb (vb)
+     LUT2:I0->O            1   0.704   0.420  vb41 (vb4_OBUF)
+     OBUF:I->O                 3.272          vb4_OBUF (vb4)
+    ----------------------------------------
+    Total                      5.609ns (4.567ns logic, 1.042ns route)
+                                       (81.4% logic, 18.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ts1'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              5.774ns (Levels of Logic = 2)
+  Source:            vb3 (FF)
+  Destination:       vb4 (PAD)
+  Source Clock:      ts1 rising
+
+  Data Path: vb3 to vb4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.591   0.787  vb3 (vb3)
+     LUT2:I1->O            1   0.704   0.420  vb41 (vb4_OBUF)
+     OBUF:I->O                 3.272          vb4_OBUF (vb4)
+    ----------------------------------------
+    Total                      5.774ns (4.567ns logic, 1.207ns route)
+                                       (79.1% logic, 20.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'power'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.126ns (Levels of Logic = 1)
+  Source:            p (FF)
+  Destination:       p (PAD)
+  Source Clock:      power rising
+
+  Data Path: p to p
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             34   0.591   1.263  p (p_OBUF)
+     OBUF:I->O                 3.272          p_OBUF (p)
+    ----------------------------------------
+    Total                      5.126ns (3.863ns logic, 1.263ns route)
+                                       (75.4% logic, 24.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ss'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.130ns (Levels of Logic = 1)
+  Source:            s (FF)
+  Destination:       s (PAD)
+  Source Clock:      ss rising
+
+  Data Path: s to s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             48   0.591   1.267  s (s_OBUF)
+     OBUF:I->O                 3.272          s_OBUF (s)
+    ----------------------------------------
+    Total                      5.130ns (3.863ns logic, 1.267ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            A_3 (FF)
+  Destination:       A<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: A_3 to A<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.591   0.447  A_3 (A_3)
+     OBUF:I->O                 3.272          A_3_OBUF (A<3>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.19 secs
+ 
+--> 
+
+Total memory usage is 271584 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+
